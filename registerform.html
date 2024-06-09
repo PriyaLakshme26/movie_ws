@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        font-size: 6vh;
+    }
+    .fg{
+        text-align: center;
+    }
+    .form{
+        color: black;
+        height: 250px;
+        width:900px;
+        margin-left:45vh;
+        background-color:yellow;
+        border-radius: 5px;
+    }
+    #content{
+        text-align: center;
+        font-size: 5vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #sign{
+        text-align: center;
+        font-size: 3vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #home{
+        text-align: center;
+        font-size: 3vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .cr{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:4vh;
+}
+#fname,#email,#phone,#password,#cpassword{
+ position:relative ;
+}
+span{
+    position: absolute;
+}
+</style>
+<body>
+    <br><br><br><h1>User Registration Form</h1>
+    <p id="content">If you are new to our website please register here</p>
+    <form class="form">
+        <div class="fg"><br>
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name">&nbsp;
+        <span></span><br><br>
+        </div>
+        <div class="fg">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email id">&nbsp;
+        <span></span><br><br>
+        </div>
+        <div class="fg">
+        <label for="phone">Phone number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number">&nbsp;
+        <span></span><br><br>
+        <div class="fg">
+         <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password">&nbsp;
+        <span></span><br><br>
+        </div>
+        <div class="fg">
+        <label for="cpassword">Confirm password:</label>
+        <input type="password" id="cpassword" name="cpassword" placeholder="confirm password">&nbsp;
+        <span></span><br><br>
+        </div>
+        <input type="submit" id="register" value="Register"><br>
+        </div>
+        </form>
+        <script src="c:\Users\hp\Desktop\pep training\regformval.js"></script>
+        <p id="sign">If you are a already registered member sign in <a href="c:\Users\hp\Desktop\pep training\signinform.html">Sign in</a></p>
+        <p id="home"><a href="c:\Users\hp\Desktop\pep training\moviewebsite.html">Return to home page</a></p> 
+        <div class="cr">&copy; All rights are reserved by Moviebuff</div>
+        <script src="priyaregform.js"> </script>
+</body>
+</html>

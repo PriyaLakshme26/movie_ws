@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website creation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .title{
+        text-align: center;
+        font-family:jokerman;
+        background-color: yellow;
+        color: black;
+        font-size: 15vh;
+    }
+    .line1{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        background-color:black;
+        color:azure;
+        font-size:4vh;
+    }
+    .line2{
+        display:grid;
+        /* grid-area:0%/0%/25%/25%; */
+        justify-content: space-between;
+        color:black;
+        font-size:3vh;
+        height:25%;
+        width:25%;
+        background-color:yellow ;
+    }
+    .img1{
+        width:20px;
+        height:20px;
+    }
+    .sym1{
+      display:flex;
+      align-items:center;
+      justify-content:start;
+    }
+    .grid-con > div {
+  text-align:center;
+  padding:20px 0;
+  font-size:10px;
+}
+    p{
+        font-size:5vh;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .text{
+     font-size: large;
+    }
+    a:link{
+        color:white;
+    }
+    a:hover{
+        color: azure;
+    }
+    a:visited{
+       color: azure;
+    }
+    a:active{
+        color: azure;
+    }
+    img{
+        height:250px;
+        width:250px;
+        opacity:1;
+    }
+    .zoom {
+  transition: transform .2s;
+  width: 300px;
+  height: 300px;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+.grid-con{
+  display: grid;
+  align-content: center;
+  grid-template-columns:1fr 1fr 1fr;
+  padding:40px;
+  justify-content:center;
+}
+#action{
+    color:black;
+    font-size: 5vh;
+}
+#end{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    font-size:7vh;
+}
+.foot{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:4vh;
+}
+.cr{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:4vh;
+}
+@media(min-width:400px)and (max-width:915px){
+.grid-con{
+ display: grid;
+ align-content: center;
+ grid-template-columns:1fr 1fr 1fr;
+ padding:40px;
+ justify-content:center;
+}
+img{
+        height:200px;
+        width:200px;
+        opacity:1;
+    }
+    .zoom {
+  transition: transform .2s;
+  width: 250px;
+  height: 250px;
+}
+.title{
+        text-align: center;
+        font-family:jokerman;
+        background-color: yellow;
+        color: black;
+        font-size: 10vh;
+}
+#end{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    font-size:5vh;
+}
+.foot{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:5vh;
+}
+}
+@media(min-width:400px)and (max-width:768px){
+.grid-con{
+ display: grid;
+ align-content: center;
+ grid-template-columns:1fr 1fr ;
+ padding:40px;
+ justify-content:center;
+}
+img{
+        height:200px;
+        width:200px;
+        opacity:1;
+    }
+    .zoom {
+  transition: transform .2s;
+  width: 250px;
+  height: 250px;
+}
+#end{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    font-size:5vh;
+}
+.foot{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:5vh;
+}
+.cr{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:5vh;
+}
+#action{
+    color:black;
+    font-size: 3vh;
+}
+}
+@media(min-width:150px)and (max-width:516px){
+.grid-con{
+ display: grid;
+ align-content: center;
+ grid-template-columns:1fr ;
+ padding:40px;
+ justify-content:center;
+}
+img{
+        height:200px;
+        width:200px;
+        opacity:1;
+    }
+    .zoom {
+  transition: transform .2s;
+  width: 250px;
+  height: 250px;
+}
+#end{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    font-size:3vh;
+}
+.foot{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:3vh;
+}
+.cr{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size:3vh;
+}
+#action{
+    color:black;
+    font-size: 3vh;
+}
+}
+/* @media(min-width:400px)and (max-width:615px){
+.grid-con{
+ display: grid;
+ align-content: center;
+ grid-template-columns:1fr 1fr;
+ padding:40px;
+ justify-content:center;
+}
+img{
+        height:100px;
+        width:100px;
+        opacity:1;
+    }
+    .zoom {
+  transition: transform .2s;
+  width: 150px;
+  height: 150px;
+}
+}
+@media(max-width:400px){
+.grid-con{
+ display: grid;
+ align-content: center;
+ grid-template-columns:1fr;
+ padding:40px;
+ justify-content:center;
+}
+img{
+        height:100px;
+        width:100px;
+        opacity:1;
+    }
+    .zoom {
+  transition: transform .2s;
+  width: 150px;
+  height: 150px;
+}
+} */
+</style>
+<body>
+    <div class="title" style="line-height:normal;">MOVIE BUFF</div>
+    <br>
+    <div class="line1">
+        <div class="sym1"> 
+        <a href="#home"><i class="fa-solid fa-house" style="color:white;"></i>Home</a>
+           </div>
+           <div class="sym1"> 
+        <a href="c:\Users\hp\Desktop\pep training\registerform.html"><i class="fa-solid fa-pen-to-square" style="color:white;"></i>Register</a>
+           </div>
+           <div class="sym1"> 
+            <a href="c:\Users\hp\Desktop\pep training\signinform.html"><i class="fa-solid fa-arrow-right-to-bracket" style="color:white;"></i>Sign in</a>
+    </div></div><!--action, adventure, comedy, drama, fantasy, horror, musicals, mystery, romance, science fiction, sports, thriller, and Western -->
+    <div class="content">
+        <p id="conc">What genre would you like to watch today?</p>
+        <div id="home">
+        <div class="grid-con">
+        <div class="one">
+        <div class="zoom">
+            <img src="c:\Users\hp\Desktop\pep training\images\action.jpeg">
+         </div>
+         <div class="text">
+           <a href="c:\Users\hp\Desktop\pep training\mwsaction.html" id="action" ><p>ACTION</p></a>
+         </div></div>
+        <div class="two">
+        <div class="zoom">
+            <img src="C:\Users\hp\Desktop\pep training\images\comedy.jpg">
+         </div>
+         <div class="text">
+           <a href="c:\Users\hp\Desktop\pep training\mwscomedy.html" id="action"><p>COMEDY</p></a>
+         </div>
+        </div>
+         <div class="three">
+        <div class="zoom">
+            <img src="C:\Users\hp\Desktop\pep training\images\mystery.jpg">
+         </div>
+         <div class="text">
+            <a href="c:\Users\hp\Desktop\pep training\mwsmystery.html" id="action"><p>MYSTERY</p></a>
+         </div>
+        </div>
+         <div class="four">
+        <div class="zoom">
+            <img src="C:\Users\hp\Desktop\pep training\images\romance.jpg">
+         </div>
+         <div class="text">
+            <a href="c:\Users\hp\Desktop\pep training\mwsromance.html" id="action"><p>ROMANCE</p></a>
+         </div>
+        </div>
+         <div class="five">
+        <div class="zoom">
+            <img src="C:\Users\hp\Desktop\pep training\images\scifi.jpg">
+        </div>
+        <div class="text">
+            <a href="c:\Users\hp\Desktop\pep training\mwsscifi.html" id="action"><p>SCI-FI</p></a>
+         </div>
+    </div>
+        <div class="six">
+        <div class="zoom">
+            <img src="C:\Users\hp\Desktop\pep training\images\thriller.jpg">
+         </div>
+         <div class="text">
+            <a href="c:\Users\hp\Desktop\pep training\mwsthriller.html" id="action"><p>THRILLER</p></a>
+         </div>
+        </div></div></div>
+            <p id="end">Feel free to contact us through</p>
+        <div class="foot">
+        <div class="contact"><a id="action"><i class="fa-solid fa-phone"></i>Contact us:7871001323</a></div><br>
+        <div class="feedback"><a id="action"><i class="fa-solid fa-lightbulb"></i>Give your feedback to moviebuff@gmail.com</a></div><br>
+        <div class="comments"><a id="action"><i class="fa-solid fa-comment"></i>Comment at @moviebuff</a></div><br>
+        </div>
+        <div class="cr">&copy; All rights are reserved by Moviebuff</div>
+    </body>
+<footer>
+
+</footer>
+</html>
